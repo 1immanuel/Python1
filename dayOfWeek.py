@@ -5,28 +5,24 @@ three = "wednesday"
 four = "thursday"
 five = "friday"
 six = "saturday"
+work = "Go to work."
 
 print("Choose a value 0-6.")
-input("Enter  value: ")
+answer = input("Enter value: ")
 
-if "0":
-    print("Today is %s." % (cero))
-elif "1":
-    print("Today is %s." % (one))
-    print("Go to work.")
-elif "2":
-    print("Today is %s." % (two))
-    print("Go to work.")
-elif "3":
-    print("Today is %s" % (three))
-    print("Go to work.")
-elif "4":
-    print("Today is %s" % (four))
-    print("Go to work.")
-elif "5": 
-    print("Today is %s" % (five))
-    print("Go to work)")
-elif "6":
-    print("Today is %s" % (six))
+if answer == "0" or "zero":
+    print("Today is %s. Blessings." % (cero))
+elif answer == "1" or "one":
+    print("Today is %s. %s." % (one, work))
+elif answer == "2" or "two":
+    print("Today is %s. %s." % (two, work))
+elif answer == "3" or "three":
+    print("Today is %s. %s." % (three, work))
+elif answer == "4" or "four":
+    print("Today is %s. %s." % (four, work))
+elif answer == "5" or "five": 
+    print("Today is %s. %s." % (five, work))
+elif answer == "6" or "six":
+    print("weekendVibes." % (six))
 else:
     print("You\'re so clever -_-.")
